@@ -1,0 +1,24 @@
+[project]
+name = "nl2sql"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "BaygeldiAza", email = "baygeldi0718@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "psycopg[binary]",
+    "sqlglot",
+    "httpx",
+]
+
+[project.scripts]
+nl2sql = "nl2sql:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
